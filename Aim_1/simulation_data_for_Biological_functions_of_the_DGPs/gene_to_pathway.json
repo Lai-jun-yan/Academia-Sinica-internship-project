@@ -1,0 +1,477 @@
+{
+    "Gene1": [
+        "Virus_Core",
+        "Random_Pathway2"
+    ],
+    "Gene2": [
+        "Virus_Core",
+        "Random_Pathway3",
+        "Random_Pathway4"
+    ],
+    "Gene3": [
+        "Virus_Core",
+        "Random_Pathway2",
+        "Random_Pathway3",
+        "Random_Pathway6"
+    ],
+    "Gene4": [
+        "Virus_Core",
+        "Random_Pathway3",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene5": [
+        "Virus_Core",
+        "Random_Pathway2",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene6": [
+        "Virus_Core",
+        "Random_Pathway2",
+        "Random_Pathway4",
+        "Random_Pathway6"
+    ],
+    "Gene7": [
+        "Virus_Core",
+        "Random_Pathway1",
+        "Random_Pathway2"
+    ],
+    "Gene8": [
+        "Virus_Core",
+        "Random_Pathway6"
+    ],
+    "Gene9": [
+        "Virus_Core",
+        "Random_Pathway2"
+    ],
+    "Gene10": [
+        "Virus_Core",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene11": [
+        "Virus_Core",
+        "Random_Pathway2",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene12": [
+        "Virus_Core",
+        "Random_Pathway3",
+        "Random_Pathway4",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene13": [
+        "Virus_Core",
+        "Random_Pathway2",
+        "Random_Pathway5"
+    ],
+    "Gene14": [
+        "Virus_Core",
+        "Random_Pathway1",
+        "Random_Pathway5"
+    ],
+    "Gene15": [
+        "Virus_Core",
+        "Random_Pathway1",
+        "Random_Pathway3",
+        "Random_Pathway4"
+    ],
+    "Gene16": [
+        "Virus_Core",
+        "Random_Pathway1",
+        "Random_Pathway2",
+        "Random_Pathway5"
+    ],
+    "Gene17": [
+        "Virus_Core"
+    ],
+    "Gene18": [
+        "Virus_Core",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene19": [
+        "Virus_Core",
+        "Random_Pathway2",
+        "Random_Pathway6"
+    ],
+    "Gene20": [
+        "Virus_Core",
+        "Random_Pathway2"
+    ],
+    "Gene21": [
+        "GramPos_Core",
+        "Random_Pathway2"
+    ],
+    "Gene22": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway6"
+    ],
+    "Gene23": [
+        "GramPos_Core",
+        "Random_Pathway6"
+    ],
+    "Gene24": [
+        "GramPos_Core"
+    ],
+    "Gene25": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway2",
+        "Random_Pathway4"
+    ],
+    "Gene26": [
+        "GramPos_Core",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene27": [
+        "GramPos_Core",
+        "Random_Pathway6"
+    ],
+    "Gene28": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway4",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene29": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway2"
+    ],
+    "Gene30": [
+        "GramPos_Core"
+    ],
+    "Gene31": [
+        "GramPos_Core",
+        "Random_Pathway4"
+    ],
+    "Gene32": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway4",
+        "Random_Pathway6"
+    ],
+    "Gene33": [
+        "GramPos_Core",
+        "Random_Pathway5"
+    ],
+    "Gene34": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway2",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene35": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway2"
+    ],
+    "Gene36": [
+        "GramPos_Core"
+    ],
+    "Gene37": [
+        "GramPos_Core",
+        "Random_Pathway1",
+        "Random_Pathway4"
+    ],
+    "Gene38": [
+        "GramPos_Core",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene39": [
+        "GramPos_Core",
+        "Random_Pathway4"
+    ],
+    "Gene40": [
+        "GramPos_Core"
+    ],
+    "Gene41": [
+        "GramNeg_Core",
+        "Random_Pathway1",
+        "Random_Pathway2",
+        "Random_Pathway5"
+    ],
+    "Gene42": [
+        "GramNeg_Core",
+        "Random_Pathway3",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene43": [
+        "GramNeg_Core",
+        "Random_Pathway4"
+    ],
+    "Gene44": [
+        "GramNeg_Core",
+        "Random_Pathway2",
+        "Random_Pathway3",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene45": [
+        "GramNeg_Core",
+        "Random_Pathway3",
+        "Random_Pathway4"
+    ],
+    "Gene46": [
+        "GramNeg_Core",
+        "Random_Pathway1",
+        "Random_Pathway2",
+        "Random_Pathway5"
+    ],
+    "Gene47": [
+        "GramNeg_Core",
+        "Random_Pathway2"
+    ],
+    "Gene48": [
+        "GramNeg_Core",
+        "Random_Pathway1",
+        "Random_Pathway3"
+    ],
+    "Gene49": [
+        "GramNeg_Core",
+        "Random_Pathway3"
+    ],
+    "Gene50": [
+        "GramNeg_Core",
+        "Random_Pathway1",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene51": [
+        "GramNeg_Core",
+        "Random_Pathway2",
+        "Random_Pathway6"
+    ],
+    "Gene52": [
+        "GramNeg_Core",
+        "Random_Pathway5"
+    ],
+    "Gene53": [
+        "GramNeg_Core",
+        "Random_Pathway1",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene54": [
+        "GramNeg_Core",
+        "Random_Pathway3"
+    ],
+    "Gene55": [
+        "GramNeg_Core"
+    ],
+    "Gene56": [
+        "GramNeg_Core",
+        "Random_Pathway2",
+        "Random_Pathway3"
+    ],
+    "Gene57": [
+        "GramNeg_Core",
+        "Random_Pathway4",
+        "Random_Pathway6"
+    ],
+    "Gene58": [
+        "GramNeg_Core",
+        "Random_Pathway2",
+        "Random_Pathway4",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene59": [
+        "GramNeg_Core"
+    ],
+    "Gene60": [
+        "GramNeg_Core",
+        "Random_Pathway2",
+        "Random_Pathway5"
+    ],
+    "Gene61": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway4",
+        "Random_Pathway6"
+    ],
+    "Gene62": [
+        "Non_Core",
+        "Random_Pathway2",
+        "Random_Pathway3"
+    ],
+    "Gene63": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway4"
+    ],
+    "Gene64": [
+        "Non_Core",
+        "Random_Pathway1",
+        "Random_Pathway6"
+    ],
+    "Gene65": [
+        "Non_Core"
+    ],
+    "Gene66": [
+        "Non_Core",
+        "Random_Pathway1",
+        "Random_Pathway3"
+    ],
+    "Gene67": [
+        "Non_Core",
+        "Random_Pathway1",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene68": [
+        "Non_Core",
+        "Random_Pathway5"
+    ],
+    "Gene69": [
+        "Non_Core",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene70": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway6"
+    ],
+    "Gene71": [
+        "Non_Core",
+        "Random_Pathway2"
+    ],
+    "Gene72": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene73": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway6"
+    ],
+    "Gene74": [
+        "Non_Core",
+        "Random_Pathway2",
+        "Random_Pathway3"
+    ],
+    "Gene75": [
+        "Non_Core",
+        "Random_Pathway4"
+    ],
+    "Gene76": [
+        "Non_Core",
+        "Random_Pathway2",
+        "Random_Pathway4"
+    ],
+    "Gene77": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene78": [
+        "Non_Core",
+        "Random_Pathway1",
+        "Random_Pathway5"
+    ],
+    "Gene79": [
+        "Non_Core"
+    ],
+    "Gene80": [
+        "Non_Core",
+        "Random_Pathway3",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene82": [
+        "Random_Pathway1"
+    ],
+    "Gene90": [
+        "Random_Pathway1",
+        "Random_Pathway2"
+    ],
+    "Gene99": [
+        "Random_Pathway1",
+        "Random_Pathway4"
+    ],
+    "Gene85": [
+        "Random_Pathway1",
+        "Random_Pathway3"
+    ],
+    "Gene86": [
+        "Random_Pathway1",
+        "Random_Pathway4"
+    ],
+    "Gene97": [
+        "Random_Pathway1",
+        "Random_Pathway2",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene98": [
+        "Random_Pathway1",
+        "Random_Pathway3",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene93": [
+        "Random_Pathway2"
+    ],
+    "Gene88": [
+        "Random_Pathway2",
+        "Random_Pathway3"
+    ],
+    "Gene81": [
+        "Random_Pathway2",
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene94": [
+        "Random_Pathway2",
+        "Random_Pathway3",
+        "Random_Pathway4"
+    ],
+    "Gene87": [
+        "Random_Pathway2",
+        "Random_Pathway3"
+    ],
+    "Gene100": [
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene95": [
+        "Random_Pathway3"
+    ],
+    "Gene83": [
+        "Random_Pathway3",
+        "Random_Pathway4"
+    ],
+    "Gene84": [
+        "Random_Pathway3",
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene89": [
+        "Random_Pathway3",
+        "Random_Pathway5"
+    ],
+    "Gene91": [
+        "Random_Pathway3",
+        "Random_Pathway4",
+        "Random_Pathway5"
+    ],
+    "Gene92": [
+        "Random_Pathway5",
+        "Random_Pathway6"
+    ],
+    "Gene96": [
+        "Random_Pathway6"
+    ]
+}
