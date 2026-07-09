@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-07-08)
+## Current Progress (2026-07-09)
 
 ### Completed
 
@@ -28,7 +28,4 @@
 - [ ] 與Serina討論想法
 - [ ] 確認實際的資料型態
 - [ ] 熟習參考文獻中提到的部分工具
-- [ ] 盡量不要vibe coding，訓練邏輯
 - [ ] 熟悉pytorch等深度學習套件
-
----
