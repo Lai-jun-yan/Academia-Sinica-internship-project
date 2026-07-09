@@ -13,11 +13,12 @@
 
 - 大致看過暑期實習計畫的參考文獻
 - 看了enrichment的review paper，熟悉概念
-- 試著用R跑WGCNA，熟悉使用方法
+- 將challenge_nasal_cellxgene_230223.h5ad的cell-gene部分資料拿出來跑WGCNA
 
 ### Current Findings
 
-- 對於WGCNA的應用，我覺得兩個實習目標都適用
+- 對於WGCNA的應用，我覺得兩個實習目標都適用，但目標二需要測試效果
+- 如果用WGCNA找cell module，目前測試的效果不太好，似乎不好應用在目標二方面
 - GCN的架構好難😭
 
 ---
@@ -28,4 +29,4 @@
 - [ ] 與Serina討論想法
 - [ ] 確認實際的資料型態
 - [ ] 熟習參考文獻中提到的部分工具
-- [ ] 熟悉pytorch等深度學習套件
+- [ ] 將試跑WGCNA的過程與簡報統整出來
