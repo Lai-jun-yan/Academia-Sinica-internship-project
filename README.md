@@ -7,13 +7,13 @@
 
 ---
 
-## Current Progress (2026-07-09)
+## Current Progress (2026-07-13)
 
 ### Completed
 
 - 大致看過暑期實習計畫的參考文獻
 - 看了enrichment的review paper，熟悉概念
-- 將challenge_nasal_cellxgene_230223.h5ad的cell-gene部分資料拿出來跑WGCNA
+- 將challenge_nasal_cellxgene_230223.h5ad的cell expression profile部分資料拿出來跑WGCNA
 
 ### Current Findings
 
@@ -27,6 +27,7 @@
 
 - [x] 完成文獻回顧的簡報
 - [ ] 與Serina討論想法
-- [ ] 確認實際的資料型態
+- [x] 確認實際的資料型態
 - [ ] 熟習參考文獻中提到的部分工具
-- [ ] 將試跑WGCNA的過程與簡報統整出來
+- [ ] 取得gene list，開始針對目標一進行enrichment
+- [x] 將試跑WGCNA的過程與簡報統整出來
