@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-07-14)
+## Current Progress (2026-07-15)
 
 ### Completed
 
@@ -29,6 +29,6 @@
 - [x] 完成文獻回顧的簡報
 - [ ] 與Serina討論想法
 - [x] 確認實際的資料型態
-- [ ] 確認KNN的過程正確
+- [x] 確認KNN的過程正確
 - [ ] 取得gene list，開始針對目標一進行enrichment
 - [x] 將試跑WGCNA的過程與簡報統整出來
