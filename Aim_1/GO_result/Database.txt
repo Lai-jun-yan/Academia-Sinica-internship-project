@@ -1,0 +1,5 @@
+KEGG_2021_Human
+Reactome_2022
+GO_Biological_Process_2023
+MSigDB_Hallmark_2020
+WikiPathways_2024_Human
