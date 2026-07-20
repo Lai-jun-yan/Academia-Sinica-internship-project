@@ -1,5 +1,5 @@
 # Pathway database
-db = "Reactome_2022"
+db = "GO_Biological_Process_2023"
 
 # 先將想分析的欄位取出來，當作enrichment的ranking，之後可以調整
 col = "RF_mean_abs_Score"
