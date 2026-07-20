@@ -7,14 +7,13 @@
 
 ---
 
-## Current Progress (2026-07-17)
+## Current Progress (2026-07-20)
 
 ### Completed
 
 - 看了enrichment的review paper，熟悉概念
 - 完成OSA跟GSEA的pipeline
-- 將challenge_nasal_cellxgene_230223.h5ad的cell expression profile部分資料拿出來跑WGCNA
-- 用challenge_nasal_cellxgene_230223.h5ad取出部分細胞做KNN，接著嘗試跑GCN
+- 完成RF mean的3個database分析(KEGG、GO、Reactome)
 
 ### Current Findings
 
@@ -27,6 +26,6 @@
 ## Next Steps
 
 - [x] 與Serina討論想法
-- [ ] 解決GSEA gene size太小的問題
-- [ ] 將目前取得的gene list跑完enrcihment，用AVG的score應該就可以了
+- [x] 解決GSEA gene size太小的問題
+- [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
 
