@@ -1,5 +1,5 @@
 # Pathway database
-db = "GO_Biological_Process_2023"
+db = "WikiPathways_2024_Human"
 
 # 先將想分析的欄位取出來，當作enrichment的ranking，之後可以調整
 col = "RF_mean_abs_Score"
@@ -74,5 +74,116 @@ print(res_2.res2d.sort_values(
     ascending=True
 ).head(20))
 
+# OSA顯著的結果
+ora_df = res.results.copy()
 
 
+# 取顯著 pathway
+sig_df = ora_df[
+    ora_df["Adjusted P-value"] < 0.05
+].copy()
+
+
+# 依顯著性排序
+sig_df = sig_df.sort_values(
+    "Adjusted P-value",
+    ascending=True
+)
+
+# GSEA顯著的結果
+sig_gsea = res_2.res2d[
+    res_2.res2d["FDR q-val"] < 0.25
+]
+
+sig_gsea = sig_gsea.sort_values(
+    by="FDR q-val",
+    ascending=True
+)
+
+# ====================================================
+# ORA與GSEA共同顯著的pathway
+# ====================================================
+
+# ORA顯著pathway
+ora_sig = sig_df.copy()
+
+# GSEA顯著pathway
+gsea_sig = sig_gsea.copy()
+
+# 找共同pathway
+common_pathways = sorted(
+    set(ora_sig["Term"]).intersection(
+        set(gsea_sig["Term"])
+    )
+)
+
+print("共同顯著Pathway數量:", len(common_pathways))
+
+# ====================================================
+# 建立整理表
+# ====================================================
+
+if len(common_pathways) == 0:
+
+    print("沒有ORA與GSEA同時顯著的Pathway")
+    
+    common_table = pd.DataFrame(
+        columns=[
+            "Pathway",
+            "ORA_FDR",
+            "GSEA_FDR",
+            "ORA_Genes",
+            "Leading_edge",
+            "Union_genes",
+            "Union_gene_count"
+        ]
+    )
+
+else:
+
+    common_table = []
+
+    for pathway in common_pathways:
+
+        ora_row = ora_sig.loc[
+            ora_sig["Term"] == pathway
+        ].iloc[0]
+
+        gsea_row = gsea_sig.loc[
+            gsea_sig["Term"] == pathway
+        ].iloc[0]
+
+
+        ora_genes = set(
+            ora_row["Genes"].split(";")
+        )
+
+        lead_genes = set(
+            gsea_row["Lead_genes"].split(";")
+        )
+
+
+        union_genes = sorted(
+            ora_genes.union(lead_genes)
+        )
+
+
+        common_table.append({
+            "Pathway": pathway,
+            "ORA_FDR": ora_row["Adjusted P-value"],
+            "GSEA_FDR": gsea_row["FDR q-val"],
+            "ORA_Genes": ";".join(sorted(ora_genes)),
+            "Leading_edge": ";".join(sorted(lead_genes)),
+            "Union_genes": ";".join(union_genes),
+            "Union_gene_count": len(union_genes)
+        })
+
+
+    common_table = pd.DataFrame(common_table)
+
+    common_table = common_table.sort_values(
+        by=["ORA_FDR","GSEA_FDR"]
+    )
+
+
+print(common_table)
