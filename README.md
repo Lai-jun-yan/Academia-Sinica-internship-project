@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-07-20)
+## Current Progress (2026-07-21)
 
 ### Completed
 
@@ -18,8 +18,7 @@
 ### Current Findings
 
 - RF相關的結果很多，需要有系統的分析
-- 如果用WGCNA找cell module，目前測試的效果不太好，似乎不好應用在目標二方面
-- 如果用KNN的方式畫出cell graph，再用GCN，預測效果看起來不錯
+- 針對RF mean的部分，只有Retroviridae跟Picornaviridae在OSA以及GSEA同時擁有共同顯著的pathway
 
 ---
 
@@ -27,6 +26,6 @@
 
 - [ ] 與Serina討論想法
 - [ ] 解決GSEA gene size太小的問題
-- [ ] 針對RF mean的結果，初步給出生物學的故事
+- [x] 針對RF mean的結果，初步給出生物學的故事
 - [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
 
