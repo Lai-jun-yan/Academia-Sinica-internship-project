@@ -13,11 +13,11 @@
 
 - 看了enrichment的review paper，熟悉概念
 - 完成OSA跟GSEA的pipeline
-- 完成RF mean的3個database分析(KEGG、GO、Reactome)
+- 完成RF mean的database分析(KEGG、GO、Reactome、MSigDB_Hallmark、WikiPathways)
 
 ### Current Findings
 
-- GSEA的input gene數量不能太少，不然會無法分析
+- RF相關的結果很多，需要有系統的分析
 - 如果用WGCNA找cell module，目前測試的效果不太好，似乎不好應用在目標二方面
 - 如果用KNN的方式畫出cell graph，再用GCN，預測效果看起來不錯
 
@@ -25,7 +25,8 @@
 
 ## Next Steps
 
-- [x] 與Serina討論想法
-- [x] 解決GSEA gene size太小的問題
+- [ ] 與Serina討論想法
+- [ ] 解決GSEA gene size太小的問題
+- [ ] 針對RF mean的結果，初步給出生物學的故事
 - [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
 
