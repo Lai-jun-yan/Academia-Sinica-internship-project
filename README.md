@@ -7,13 +7,13 @@
 
 ---
 
-## Current Progress (2026-07-21)
+## Current Progress (2026-07-22)
 
 ### Completed
 
-- 看了enrichment的review paper，熟悉概念
-- 完成OSA跟GSEA的pipeline
 - 完成RF mean的database分析(KEGG、GO、Reactome、MSigDB_Hallmark、WikiPathways)
+- 完成07.23的進度報告
+- 大致看完 Human SARS-CoV-2 challenge uncovers local and systemic response dynamics
 
 ### Current Findings
 
@@ -25,7 +25,8 @@
 ## Next Steps
 
 - [ ] 與Serina討論想法
-- [ ] 解決GSEA gene size太小的問題
+- [x] 解決GSEA gene size太小的問題
 - [x] 針對RF mean的結果，初步給出生物學的故事
 - [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
+- [ ] 透過 challenge_nasal_cellxgene_230223.h5ad 建立GCN架構
 
