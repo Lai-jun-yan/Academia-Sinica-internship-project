@@ -7,26 +7,24 @@
 
 ---
 
-## Current Progress (2026-07-24)
+## Current Progress (2026-07-28)
 
 ### Completed
 
-- 完成RF mean的database分析(KEGG、GO、Reactome、MSigDB_Hallmark、WikiPathways)
 - 完成初步的Ravindra2021.raw_count.stdprep.h5ad資料探勘
-- 完成07.27的進度報告
+- 建立選擇高可信度細胞標籤的框架
 
 ### Current Findings
 
-- 資料集可能有non-coding的基因，需要剃除後重新分析
-- +-標準差去找出高可信度的細胞標籤
+- 病毒轉錄體的分布呈現右偏態
+- 細胞是否感染與細胞類別可能有關
 
 ---
 
 ## Next Steps
 
-- [x] 與Serina討論想法
-- [x] 解決GSEA gene size太小的問題
-- [x] 針對RF mean的結果，初步給出生物學的故事
+- [ ] 針對Ravindra2021.raw_count.stdprep.h5ad的基因做特徵選取
+- [ ] 探討ORA的backgrourd問題
 - [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
-- [ ] 透過 Ravindra2021.raw_count.stdprep.h5ad 分出判別細胞感染的threshold
+- [x] 透過 Ravindra2021.raw_count.stdprep.h5ad 分出判別細胞感染的threshold
 
