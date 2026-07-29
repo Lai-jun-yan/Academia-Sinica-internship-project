@@ -7,23 +7,25 @@
 
 ---
 
-## Current Progress (2026-07-28)
+## Current Progress (2026-07-29)
 
 ### Completed
 
 - 完成初步的Ravindra2021.raw_count.stdprep.h5ad資料探勘
 - 建立選擇高可信度細胞標籤的框架
+- 匯出訓練GCN所需要的資料
 
 ### Current Findings
 
 - 病毒轉錄體的分布呈現右偏態
-- 細胞是否感染與細胞類別可能有關
+- 細胞是否感染與細胞類別在卡方檢定下達到顯著
 
 ---
 
 ## Next Steps
 
-- [ ] 針對Ravindra2021.raw_count.stdprep.h5ad的基因做特徵選取
+- [x] 針對Ravindra2021.raw_count.stdprep.h5ad的基因做特徵選取
+- [ ] 先架設GCN的前向傳播
 - [ ] 探討ORA的backgrourd問題
 - [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
 - [x] 透過 Ravindra2021.raw_count.stdprep.h5ad 分出判別細胞感染的threshold
