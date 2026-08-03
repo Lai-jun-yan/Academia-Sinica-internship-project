@@ -7,19 +7,18 @@
 
 ---
 
-## Current Progress (2026-07-30)
+## Current Progress (2026-08-03)
 
 ### Completed
 
-- 建立選擇高可信度細胞標籤的框架
-- 匯出訓練GCN所需要的資料
 - 使用套件訓練GCN
+- 完成RF immune gene的enrichment分析(GSEA only)
 
 ### Current Findings
 
-- 病毒轉錄體的分布呈現右偏態
 - 細胞是否感染與細胞類別在卡方檢定下達到顯著
 - GCN的表現穩定且非常好
+- XGBoost所依賴的gene set太小，會造成GSEA結果的解讀有問題
 
 ---
 
@@ -28,6 +27,6 @@
 - [ ] GCN與logistic regression和MLP做比較，確定graph是否有幫助
 - [ ] 檢查模型針對unknown cell的標籤
 - [ ] 探討ORA的backgrourd問題
-- [ ] 將目前取得的gene list跑完enrcihment，用Mean的score應該就可以了
+- [ ] 將immune gene資料集跑完XGBoost的enrichment分析
 - [ ] 完成第一次針對Aim2的進度報告
 
