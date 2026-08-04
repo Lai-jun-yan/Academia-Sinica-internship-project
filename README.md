@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-08-03)
+## Current Progress (2026-08-04)
 
 ### Completed
 
@@ -26,7 +26,7 @@
 
 - [ ] GCN與logistic regression和MLP做比較，確定graph是否有幫助
 - [ ] 檢查模型針對unknown cell的標籤
-- [ ] 探討ORA的backgrourd問題
+- [x] 探討ORA的backgrourd問題
 - [ ] 將immune gene資料集跑完XGBoost的enrichment分析
 - [ ] 完成第一次針對Aim2的進度報告
 
