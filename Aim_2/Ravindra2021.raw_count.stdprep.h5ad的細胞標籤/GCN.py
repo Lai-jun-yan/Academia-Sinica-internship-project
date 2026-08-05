@@ -247,6 +247,9 @@ with torch.no_grad():
     )[:,1]
 
 
+metadata["predict_label"] = pred
+metadata["infect_prob"] = prob.cpu().numpy()
+
 y_true = (
     data.y[data.val_mask]
     .cpu()
@@ -287,11 +290,16 @@ print(
     )
 )
 
+# 模型的表現:
+# Confusion matrix:
+# [[4412    4]
+#  [  10  333]]
+
 # Classification report:
 #               precision    recall  f1-score   support
 
 #            0       1.00      1.00      1.00      4416
-#            1       0.99      0.96      0.97       343
+#            1       0.99      0.97      0.98       343
 
 #     accuracy                           1.00      4759
 #    macro avg       0.99      0.98      0.99      4759
@@ -377,4 +385,165 @@ print(
     round(pr_auc,4)
 )
 
-# PR-AUC: 0.9986
+# PR-AUC: 0.9983
+
+# 探討模型給每個細胞的預測結果以及機率
+healthy = metadata[metadata["label"] == 0]
+
+infected = metadata[metadata["label"] == 1]
+
+unknown_pred_healthy = metadata[
+    (metadata["label"] == -1) &
+    (metadata["predict_label"] == 0)
+]
+
+unknown_pred_infected = metadata[
+    (metadata["label"] == -1) &
+    (metadata["predict_label"] == 1)
+]
+
+unknown = metadata[metadata["label"] == -1]
+
+# 將原本未知的細胞資訊匯出
+# save_path = r"C:\Users\USER\Desktop\資訊所實習\計畫\資料探勘\Ravindra2021.raw_count.stdprep.h5ad的細胞標籤\GCN_unknown_prediction.csv"
+
+# unknown.to_csv(
+#     save_path,
+#     encoding="utf-8-sig"
+# )
+
+# print("CSV 已輸出:")
+# print(save_path)
+# print("資料大小:", unknown.shape)
+
+plt.figure(figsize=(8,6))
+
+plt.hist(
+    np.log10(infected["Viral_transcript"] + 1),
+    bins=50,
+    alpha=0.5,
+    label="Original infected"
+)
+
+plt.hist(
+    np.log10(unknown_pred_healthy["Viral_transcript"] + 1),
+    bins=50,
+    alpha=0.5,
+    label="Unknown -> Healthy"
+)
+
+plt.hist(
+    np.log10(unknown_pred_infected["Viral_transcript"] + 1),
+    bins=50,
+    alpha=0.5,
+    label="Unknown -> Infected"
+)
+
+plt.axvline(
+    np.log10(11),   # 對應 Viral transcript = 10
+    color="red",
+    linestyle="--",
+    linewidth=2,
+    label="Paper cutoff = 10"
+)
+
+plt.yscale("log")   # y 軸改成 log scale
+
+plt.xlabel("log10(Viral transcript + 1)")
+plt.ylabel("Cell count (log scale)")
+
+plt.legend()
+plt.tight_layout()
+plt.show()
+
+print("")
+print("----------------------------------------------------------------")
+print("未知的細胞最後被判定為感染的summary:")
+
+low_viral = unknown_pred_infected[
+    unknown_pred_infected["Viral_transcript"] < 10
+]
+
+print(f"Unknown → Infected: {len(unknown_pred_infected)} cells")
+print(f"Viral transcript < 10: {len(low_viral)} cells")
+print(f"Percentage: {len(low_viral)/len(unknown_pred_infected)*100:.2f}%")
+# 未知的細胞最後被判定為感染的summary:
+# Unknown → Infected: 37282 cells
+# Viral transcript < 10: 34911 cells
+# Percentage: 93.64%
+
+
+print("病毒轉錄體的分布:")
+viral = unknown_pred_infected["Viral_transcript"]
+
+print("0:", (viral == 0).sum())
+print("1~9:", ((viral > 0) & (viral < 10)).sum())
+print("10~99:", ((viral >= 10) & (viral < 100)).sum())
+print(">=100:", (viral >= 100).sum())
+
+# 病毒轉錄體的分布:
+# 0: 8947
+# 1~9: 25964
+# 10~99: 1906
+# >=100: 465
+
+
+print("")
+print("模型判斷的信心:")
+print(unknown_pred_infected["infect_prob"].describe())
+
+# 模型判斷的信心:
+# count    37282.000000
+# mean         0.929394
+# std          0.123776
+# min          0.500053
+# 25%          0.918473
+# 50%          0.997383
+# 75%          0.999997
+# max          1.000000
+
+print("")
+print("根本沒有病毒轉錄體，但被判定為感染的信心:")
+zero_cells = unknown_pred_infected[
+    unknown_pred_infected["Viral_transcript"] == 0
+]
+
+print(
+    zero_cells["infect_prob"].describe()
+)
+
+# 根本沒有病毒轉錄體，但被判定為感染的信心:
+# count    8947.000000
+# mean        0.920629
+# std         0.129182
+# min         0.500053
+# 25%         0.892943
+# 50%         0.994462
+# 75%         0.999963
+# max         1.000000
+
+# 檢查病毒轉錄體是否仍然是判斷感染與否的標準
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+plot_df = metadata.copy()
+
+plot_df["Transcript_group"] = pd.cut(
+    plot_df["Viral_transcript"],
+    bins=[-1,0,9,99,float("inf")],
+    labels=["0","1-9","10-99",">=100"]
+)
+
+plt.figure(figsize=(8,5))
+
+sns.boxplot(
+    data=plot_df,
+    x="Transcript_group",
+    y="infect_prob",
+    showfliers=False
+)
+
+plt.xlabel("Viral transcript")
+plt.ylabel("Predicted infection probability")
+
+plt.show()
