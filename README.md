@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-08-05)
+## Current Progress (2026-08-06)
 
 ### Completed
 
@@ -29,6 +29,6 @@
 - [ ] 開始應用WGCNA在aim1的部分
 - [x] 檢查模型針對unknown cell的標籤
 - [x] 探討ORA的backgrourd問題
-- [ ] 將immune gene資料集跑完XGBoost的enrichment分析
+- [ ] 探討RF可能學習到與哪些生物意義相關
 - [x] 完成第一次針對Aim2的進度報告
 
