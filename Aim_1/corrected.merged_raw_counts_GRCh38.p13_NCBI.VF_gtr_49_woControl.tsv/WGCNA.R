@@ -21,18 +21,18 @@ gsg <- goodSamplesGenes(
 gsg$allOK
 
 
-# 查看sample outlier
-sampleTree <- hclust(
-  dist(datExpr),
-  method = "average"
-)
-
-plot(
-  sampleTree,
-  main = "Sample clustering to detect outliers",
-  sub = "",
-  xlab = ""
-)
+# # 查看sample outlier
+# sampleTree <- hclust(
+#   dist(datExpr),
+#   method = "average"
+# )
+# 
+# plot(
+#   sampleTree,
+#   main = "Sample clustering to detect outliers",
+#   sub = "",
+#   xlab = ""
+# )
 
 # 轉換expression data
 datExpr <- log2(
