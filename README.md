@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-08-10)
+## Current Progress (2026-08-11)
 
 ### Completed
 
@@ -20,15 +20,15 @@
 
 - 細胞是否感染與細胞類別在卡方檢定下達到顯著(高可信度細胞與預測細胞趨勢不同)
 - GCN的表現穩定且非常好
-- XGBoost所依賴的gene set太小，會造成GSEA結果的解讀有問題
 - 細胞存在病毒轉錄體的情況下(不論高低)，高機率被歸類為感染
 - 算gene module與感染病毒的關係，需要global sample dataset
+- 8個virus family的最佳power不同
 
 ---
 
 ## Next Steps
 
-- [ ] 每個病毒子集跑WGCNA
+- [ ] 選擇每個病毒子集各自的soft power
 - [ ] 合併每個病毒子集(global)
 - [x] 檢查模型針對unknown cell的標籤
 - [ ] 根據RF的統整結果給出生物學意義
