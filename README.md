@@ -7,11 +7,11 @@
 
 ---
 
-## Current Progress (2026-08-11)
+## Current Progress (2026-08-12)
 
 ### Completed
 
-- 使用套件訓練GCN
+- 完成08/12與老師開會的簡報
 - 完成RF immune gene的enrichment分析(GSEA only)
 - 初步探勘unknown cell的標籤結果
 - 分出RF gene list的每個感染病毒子集(WGCNA)
