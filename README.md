@@ -28,10 +28,10 @@
 
 ## Next Steps
 
-- [ ] 選擇每個病毒子集各自的soft power
-- [ ] 合併每個病毒子集(global)
-- [x] 檢查模型針對unknown cell的標籤
+- [ ] 想清楚要如何使用WGCNA
+- [ ] 將healty的baseline改成1 dpi且vt = 0 的cell 
+- [ ] 找出替代scla free 假設的指標
 - [ ] 根據RF的統整結果給出生物學意義
-- [ ] 找出病毒轉錄體1 ~ 9細胞的基因表現之生物意義
+- [x] 檢查模型針對unknown cell的標籤
 
 
