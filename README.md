@@ -7,7 +7,7 @@
 
 ---
 
-## Current Progress (2026-08-12)
+## Current Progress (2026-08-13)
 
 ### Completed
 
@@ -15,6 +15,7 @@
 - 完成RF immune gene的enrichment分析(GSEA only)
 - 初步探勘unknown cell的標籤結果
 - 分出RF gene list的每個感染病毒子集(WGCNA)
+- 以1dpi當作baseline，重新跑GCN
 
 ### Current Findings
 
@@ -23,15 +24,16 @@
 - 細胞存在病毒轉錄體的情況下(不論高低)，高機率被歸類為感染
 - 算gene module與感染病毒的關係，需要global sample dataset
 - 8個virus family的最佳power不同
+- 將mock剔除後，GCN的表現下降，但還是不錯
 
 ---
 
 ## Next Steps
 
 - [ ] 想清楚要如何使用WGCNA
-- [ ] 將healty的baseline改成1 dpi且vt = 0 的cell 
+- [x] 將healty的baseline改成1 dpi且vt = 0 的cell 
 - [ ] 找出替代scla free 假設的指標
 - [ ] 根據RF的統整結果給出生物學意義
-- [x] 檢查模型針對unknown cell的標籤
+- [ ] 使用其他機器學習模型(如RF)與GCN比較
 
 
