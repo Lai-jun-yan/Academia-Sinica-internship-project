@@ -7,11 +7,11 @@
 
 ---
 
-## Current Progress (2026-08-17)
+## Current Progress (2026-08-18)
 
 ### Completed
 
-- 完成08/12與老師開會的簡報
+- 完成08/20與Serina開會的簡報
 - 完成RF immune gene的enrichment分析(GSEA only)
 - Aim 2跑logistic regression
 - 以1dpi當作baseline，重新跑GCN
