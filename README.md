@@ -7,32 +7,25 @@
 
 ---
 
-## Current Progress (2026-08-18)
+## Current Progress (2026-08-20)
 
 ### Completed
 
-- 完成08/20與Serina開會的簡報
 - 完成RF immune gene的enrichment分析(GSEA only)
-- Aim 2跑logistic regression
-- 以1dpi當作baseline，重新跑GCN
 - 初步探討GCN與Logistic的差別
 
 ### Current Findings
 
-- 細胞是否感染與細胞類別在卡方檢定下達到顯著(高可信度細胞與預測細胞趨勢不同)
-- Logistic regression的表現效果比GCN好
-- 將mock剔除後，GCN的表現下降，但還是不錯
+- Enrichment的pathways與RF所學到的特徵不一定有直接關係
 - GCN vs Logistic對於unknown cell的預測有差別
-- GCN & Logistic仍然有病毒轉錄體高，而感染機率上升的趨勢
 
 ---
 
 ## Next Steps
 
-- [ ] 想清楚要如何使用WGCNA
-- [x] 將healty的baseline改成1 dpi且vt = 0 的cell 
-- [ ] 找出替代scla free 假設的指標
-- [ ] 根據RF的統整結果給出生物學意義
-- [x] 使用統計模型(如羅吉斯回歸)與GCN比較
+- [ ] 完成enrichment分析的流程介紹
+- [ ] 完成GCN訓練過程的介紹
+- [x] 根據RF的統整結果給出生物學意義
+
 
 
