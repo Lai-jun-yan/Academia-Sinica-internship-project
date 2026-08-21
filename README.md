@@ -7,12 +7,11 @@
 
 ---
 
-## Current Progress (2026-08-20)
+## Current Progress (2026-08-21)
 
 ### Completed
 
-- 完成RF immune gene的enrichment分析(GSEA only)
-- 初步探討GCN與Logistic的差別
+- 完成暑期結業報告初版
 
 ### Current Findings
 
@@ -23,8 +22,8 @@
 
 ## Next Steps
 
-- [ ] 完成enrichment分析的流程介紹
-- [ ] 完成GCN訓練過程的介紹
+- [ ] 檢查暑期結業簡報的內容
+- [ ] 練習暑期結業報告
 - [x] 根據RF的統整結果給出生物學意義
 
 
