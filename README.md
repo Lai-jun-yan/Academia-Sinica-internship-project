@@ -2,16 +2,17 @@
 
 ## Project Overview
 
-- Aim 1:針對深度學習模型已經找到的gene set進行後續分析，比方說enrichment等等。
-- Aim 2:透過已有的gene expression data以及某些已知的cell label，預測未知的cell lebel
+- Aim 1:針對深度學習模型已經找到的基因集合進行後續分析，比方說富集分析等等。
+- Aim 2:透過已有的基因表達資料以及某些已知型態的細胞，利用GCN模型將型態標籤傳播給未知型態的細胞。
 
 ---
 
-## Current Progress (2026-08-21)
+## Current Progress (2026-08-24)
 
 ### Completed
 
-- 完成暑期結業報告初版
+- 完成暑期結業報告
+- 完成暑期成果簡報初版
 
 ### Current Findings
 
@@ -22,9 +23,8 @@
 
 ## Next Steps
 
-- [ ] 檢查暑期結業簡報的內容
-- [ ] 練習暑期結業報告
-- [x] 根據RF的統整結果給出生物學意義
+- [ ] 練習暑期成果簡報的內容
+- [ ] 先練習給Serina聽
 
 
 
