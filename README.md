@@ -7,24 +7,24 @@
 
 ---
 
-## Current Progress (2026-08-24)
+## Current Progress (2026-08-25)
 
 ### Completed
 
 - 完成暑期結業報告
-- 完成暑期成果簡報初版
+- 修改暑期成果簡報
 
 ### Current Findings
 
-- Enrichment的pathways與RF所學到的特徵不一定有直接關係
+- Enrichment的pathways解釋上要小心
 - GCN vs Logistic對於unknown cell的預測有差別
 
 ---
 
 ## Next Steps
 
-- [ ] 練習暑期成果簡報的內容
-- [ ] 先練習給Serina聽
+- [ ] 報告暑期成果簡報的內容
+
 
 
 
