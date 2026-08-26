@@ -7,12 +7,11 @@
 
 ---
 
-## Current Progress (2026-08-25)
+## Current Progress (2026-08-26)
 
 ### Completed
 
 - 完成暑期結業報告
-- 修改暑期成果簡報
 
 ### Current Findings
 
@@ -23,7 +22,7 @@
 
 ## Next Steps
 
-- [ ] 報告暑期成果簡報的內容
+- [x] 報告暑期成果簡報的內容
 
 
 
